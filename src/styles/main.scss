@@ -1,0 +1,44 @@
+@import './reset.scss';
+
+html, body {
+  font-family: 'Inter', sans-serif;
+
+  button {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.button {
+  padding: 20px 36px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 28px;
+  outline: none;
+  border: none;
+
+  color: #0CAF60;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #FFF;
+    background: #000;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.social-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+}
+
+.social-username {
+  color: #FFFFFF;
+  font-size: 18px;
+}
