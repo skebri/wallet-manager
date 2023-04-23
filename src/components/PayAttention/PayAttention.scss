@@ -1,0 +1,54 @@
+.pay-attention-wrapper {
+  .pay-attention-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    margin-bottom: 60px;
+  }
+
+  .pay-attention-fields {
+    display: flex;
+    justify-content: space-between;
+
+    .field {
+      max-width: 311px;
+      .field-marks {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        img {
+          height: 120px;
+        }
+
+        .field-index {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 100%;
+          background: #0CAF60;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 23px;
+          color: #FFF;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        /* or 35px */
+
+
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}

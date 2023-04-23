@@ -5,7 +5,11 @@ import logo from '../../assets/wp-logo.svg';
 export const Header = () => {
   return (
     <div className="header">
-      <img src={logo} alt="" />
+      <div className="logo-wrapper">
+        <img src={logo} alt="" />
+        <div className="logo-text">WalletManager</div>
+      </div>
+
       <button className="button">Go to wallet manager</button>
     </div>
   )

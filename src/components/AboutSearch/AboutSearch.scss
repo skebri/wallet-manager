@@ -1,0 +1,122 @@
+.about-search {
+  .search-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+  }
+
+  .search-example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 100px;
+    height: 80px;
+    max-width: 1160px;
+    margin: 60px 0 40px 0;
+
+    .search-example-title {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 130%;
+      /* or 36px */
+
+
+      color: rgba(0, 0, 0, 0.6);
+
+      @media all and (max-width: 1160px) {
+      }
+    }
+  }
+
+  .search-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    /* or 35px */
+
+
+    color: rgba(255, 255, 255, 0.6);
+
+    span {
+      color: #FFF;
+    }
+
+    .span-green {
+      color: #0CAF60;
+    }
+  }
+
+  .search-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 60px 0 140px 0;
+    color: #fff;
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      .feature-text {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+
+        .feature-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #E2E8F0;
+          width: 44px;
+          height: 44px;
+          margin-bottom: 20px;
+          border-radius: 100%;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 23px;
+          text-align: center;
+
+          /* Greyscale / 900 */
+
+          color: #1A202C;
+        }
+
+        .feature-title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 100%;
+          /* or 28px */
+
+          text-align: center;
+
+          color: #0CAF60;
+        }
+      }
+
+      .feature-description {
+        max-width: 475px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 160%;
+        /* or 48px */
+
+
+        color: rgba(255, 255, 255, 0.6);
+
+        padding-top: 60px;
+      }
+    }
+  }
+}

@@ -3,4 +3,28 @@
   align-items: center;
   justify-content: space-between;
   padding: 90px 0 60px 0;
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    background: #1B1B1B;
+    border-radius: 6px;
+
+    img {
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 48px;
+      /* identical to box height, or 133% */
+
+      letter-spacing: 0.05em;
+
+      /* Text / Primary */
+
+      color: #FFFFFF;
+    }
+  }
 }

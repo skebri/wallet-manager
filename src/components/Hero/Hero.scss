@@ -46,43 +46,4 @@
 
     color: #FFFFFF;
   }
-
-  .social {
-    display: flex;
-    gap: 32px;
-    margin: 104px 0 140px 0;
-
-    .social-title {
-      font-weight: 600;
-      font-size: 28px;
-      line-height: 130%;
-      /* or 36px */
-
-
-      color: #FFFFFF;
-      max-width: 212px;
-    }
-
-    .social-links {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-
-      .social-link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 21px 25px;
-        background: #292929;
-        border-radius: 100px;
-        text-decoration: none;
-
-        img {
-          height: 36px;
-        }
-      }
-    }
-  }
 }
