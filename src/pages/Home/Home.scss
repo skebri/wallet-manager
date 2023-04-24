@@ -1,6 +1,5 @@
 .background {
-  background: url("../../assets/background-patern.svg");
-  background-repeat: no-repeat;
+  background: url("../../assets/background-patern.svg"), linear-gradient(180deg, #121212 0%, #000000 100%);
   padding-bottom: 35px;
   width: 100%;
 }

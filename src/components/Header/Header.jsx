@@ -1,4 +1,5 @@
 import './Header.scss';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/wp-logo.svg';
 
@@ -10,7 +11,7 @@ export const Header = () => {
         <div className="logo-text">WalletManager</div>
       </div>
 
-      <button className="button">Go to wallet manager</button>
+      <Link to="/app" className="button">Go to wallet manager</Link>
     </div>
   )
 }

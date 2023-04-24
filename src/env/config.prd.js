@@ -1,0 +1,3 @@
+export const CONTRACT_ADDRESSES = {
+  FAU: '0xBA62BCfcAaFc6622853cca2BE6Ac7d845BC0f2Dc'
+}

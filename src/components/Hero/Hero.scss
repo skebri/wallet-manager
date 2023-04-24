@@ -16,6 +16,37 @@
       &:last-child {
         margin-right: 0;
       }
+
+      @media all and (max-width: 920px) {
+        font-size: 26px;
+      }
+
+      @media all and (max-width: 800px) {
+        font-size: 15px;
+      }
+
+      @media all and (max-width: 550px) {
+        font-size: 12px;
+        padding: 10px 20px;
+      }
+
+      @media all and (max-width: 500px) {
+        margin-right: 10px;
+      }
+
+      @media all and (max-width: 400px) {
+        margin-right: 0;
+      }
+    }
+
+    @media all and (max-width: 420px) {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    @media all and (max-width: 400px) {
+      justify-content: space-between;
+      gap: 20px;
     }
   }
 
@@ -32,6 +63,42 @@
     color: #FFFFFF;
 
     margin: 48px 0 32px 0;
+
+    @media all and (max-width: 920px) {
+      font-size: 90px;
+    }
+
+    @media all and (max-width: 800px) {
+      font-size: 80px;
+    }
+
+    @media all and (max-width: 700px) {
+      font-size: 70px;
+    }
+
+    @media all and (max-width: 600px) {
+      font-size: 60px;
+    }
+
+    @media all and (max-width: 550px) {
+      letter-spacing: 0;
+      font-size: 40px;
+      margin: 40px 0 20px 0;
+    }
+
+    @media all and (max-width: 500px) {
+      line-height: 80px;
+    }
+
+    @media all and (max-width: 420px) {
+      font-size: 32px;
+      margin: 20px 0 20px 0;
+    }
+
+    @media all and (max-width: 400px) {
+      font-size: 45px;
+      margin: 0;
+    }
   }
 
   .hero-description {
@@ -45,5 +112,17 @@
     /* Text / Alternate */
 
     color: #FFFFFF;
+
+    @media all and (max-width: 800px) {
+      font-size: 30px;
+    }
+
+    @media all and (max-width: 420px) {
+      font-size: 25px;
+    }
+
+    @media all and (max-width: 400px) {
+      font-size: 35px;
+    }
   }
 }

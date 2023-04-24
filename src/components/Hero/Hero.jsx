@@ -6,7 +6,7 @@ export const Hero = () => {
       <div className="hero-features">
         <div className="hero-feature">Networks</div>
         <div className="hero-feature">Assets</div>
-        <div className="hero-feature">Pools</div>
+        <div className="hero-feature">Yields</div>
         <div className="hero-feature">Swaps</div>
       </div>
 

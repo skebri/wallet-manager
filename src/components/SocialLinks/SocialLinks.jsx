@@ -8,7 +8,7 @@ export const SocialLinks = () => {
   return (
     <div className="social">
       <div className="social-title">
-        <p>Follow us for more updates.</p>
+        <p>Follow us for more updates:</p>
       </div>
       <div className="social-links">
         <a href="https://svarogdev.com" className="social-link">
