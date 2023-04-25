@@ -1,5 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useWeb3 } from "../../hooks/useWeb3";
+
+import { AccountBar } from "../../components/AccountBar/AccountBar";
+
 import './App.css';
 
 export const App = () => {
@@ -14,6 +17,8 @@ export const App = () => {
 
   return (
     <div className="app-wrapper">
+      <AccountBar />
+
       {address}
       <br/>
       {parseFloat(balance).toFixed(2)} ETH
