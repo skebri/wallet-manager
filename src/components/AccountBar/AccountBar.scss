@@ -4,4 +4,19 @@
   justify-content: space-between;
   background-color: #1F2937;
   padding: 24px 48px;
+
+  .account-actions {
+    display: flex;
+    align-items: center;
+
+    @media all and (max-width: 500px) {
+      width: 100%;
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    flex-direction: column;
+  }
 }

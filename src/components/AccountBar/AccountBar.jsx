@@ -9,9 +9,11 @@ export const AccountBar = () => {
     <div className="account-bar">
       <MagicSearch />
 
-      <Notifications />
+      <div className="account-actions">
+        <Notifications />
 
-      <AccountButton />
+        <AccountButton />
+      </div>
     </div>
   )
 }
