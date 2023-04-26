@@ -3,16 +3,23 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  min-width: 135px;
-  max-width: 256px;
+  max-width: 80px;
+  position: relative;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    max-width: 400px;
+
+    .sidebar-navigation .menu-item .menu-item-title {
+      opacity: 1;
+    }
+  }
 
   .logo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
     padding-left: 40px;
-    height: 98px;
+    padding-right: 40px;
+    position: relative;
     border-right: 1px solid #323B49;
     background-color: #1F2937;
 
@@ -21,25 +28,43 @@
       .logo {
         width: 55px;
       }
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
 
     .expander-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
+      background: none;
+      border: none;
+      right: 0;
+      outline: none;
       position: absolute;
-      right: -16px;
+      cursor: pointer;
 
       .expander {
         width: 32px;
         height: 32px;
         transform: rotate(180deg);
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+
+      .wallet-expander-rotate {
+        transform: rotate(0deg);
       }
     }
   }
 
   .sidebar-navigation {
-    display: none;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
@@ -72,12 +97,15 @@
       }
 
       .menu-item-title {
+        opacity: 0;
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.2px;
         color: #718096;
         margin-left: 16px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
       }
 
       &:last-child {

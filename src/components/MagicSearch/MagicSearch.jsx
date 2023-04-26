@@ -8,7 +8,7 @@ export const MagicSearch = () => {
     <div className="search-wrapper">
       <div className="input-wrapper">
         <img src={searchIcon} alt="Search" />
-        Search...
+        <input type="text" placeholder="Search..." />
       </div>
 
       <div className="search-options">

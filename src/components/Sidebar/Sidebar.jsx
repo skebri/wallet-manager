@@ -1,3 +1,6 @@
+import { useState, useCallback } from 'react';
+import clsx from 'clsx';
+
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/wp-logo.svg';
@@ -10,17 +13,13 @@ import help from '../../assets/help-icon.svg';
 
 import './Sidebar.scss';
 
-export const Sidebar = () => {
-  return (
+export const Sidebar = () => (
+  (
     <div className="sidebar">
       <div className="logo-wrapper">
         <Link to="/" className="home-link">
           <img src={logo} className="logo" alt="LogoWM" />
         </Link>
-
-        <div className="expander-wrapper">
-          <img src={expander} className="expander" alt="ExpanderIcon" />
-        </div>
       </div>
 
       <div className="sidebar-navigation">
@@ -56,4 +55,4 @@ export const Sidebar = () => {
       </div>
     </div>
   )
-}
+);
