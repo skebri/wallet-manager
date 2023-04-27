@@ -13,7 +13,7 @@ import reportWebVitals from './reportWebVitals';
 import store from './store/index';
 import { WagmiConfig } from 'wagmi';
 import { chains, wagmiClient } from './services/rainbowService.js';
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
 
 
 const router = createBrowserRouter([
@@ -32,7 +32,12 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <WagmiConfig client={wagmiClient}>
-        <RainbowKitProvider chains={chains}>
+        <RainbowKitProvider
+            theme={darkTheme({
+              accentColor: '#86D7B0',
+              accentColorForeground: '#0CAF60',
+            })}
+           chains={chains}>
           <RouterProvider router={router} />
         </RainbowKitProvider>
       </WagmiConfig>

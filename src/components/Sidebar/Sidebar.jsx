@@ -1,10 +1,6 @@
-import { useState, useCallback } from 'react';
-import clsx from 'clsx';
-
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/wp-logo.svg';
-import expander from '../../assets/expander-icon.svg';
 import dashboard from '../../assets/dashboard-icon.svg';
 import explore from '../../assets/explore-icon.svg';
 import settings from '../../assets/settings-icon.svg';
@@ -27,7 +23,7 @@ export const Sidebar = () => (
           <div className="sidebar-title">Menu</div>
 
           <div className="menu-item">
-            <img src={dashboard} className="menu-icon" alt="DashIcon" />
+            <img className="menu-item-icon" src={dashboard} alt="DashIcon" />
             <div className="menu-item-title">Dashboard</div>
           </div>
         </div>

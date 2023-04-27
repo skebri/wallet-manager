@@ -1,19 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { connectWallet } from '../../features/walletSlice';
-import { selectAddress } from '../../selectors/walletSelector';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from '../ConnectButton/ConnectButton';
 
 import accountIcon from '../../assets/account-icon.png';
 
 import './AccountButton.scss';
 
 export const AccountButton = () => {
-  const dispatch = useDispatch()
-  const address = useSelector(selectAddress)
-
-  const connectWalletAction = () => {
-    dispatch(connectWallet({ address: '0x0' }))
-  }
 
   return (
     <div className="account-button">

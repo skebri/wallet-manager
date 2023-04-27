@@ -1,0 +1,87 @@
+.connect-button-wrapper {
+  .connect-wallet-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 8px;
+    width: 205px;
+    height: 56px;
+    left: 16px;
+    top: 363px;
+    border: 1px solid #0CAF60;
+    border-radius: 12px;
+    color: #0CAF60;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border: 1px solid #86D7B0;
+      color: #86D7B0;
+    }
+  }
+
+  .connected-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+    .network-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: none;
+      outline: none;
+      border: none;
+      width: 102px;
+      padding: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 160%;
+      display: flex;
+      align-items: center;
+      color: #718096;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      .network-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 6px;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .wallet-button {
+      background: none;
+      outline: none;
+      border: none;
+      width: 102px;
+      padding: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.3px;
+      color: #FAFAFA;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      margin-bottom: 4px;
+      color: #0CAF60;
+
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+}

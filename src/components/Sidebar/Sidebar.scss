@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  max-width: 80px;
+  max-width: 74px;
   position: relative;
   width: 100%;
   transition: all 0.2s ease-in-out;
@@ -12,21 +12,32 @@
     max-width: 400px;
 
     .sidebar-navigation .menu-item .menu-item-title {
+      display: flex;
+    }
+
+    .sidebar-navigation .sidebar-menu .sidebar-title {
       opacity: 1;
+    }
+
+    .logo-wrapper .home-link .home-link-title {
+      display: flex;
     }
   }
 
   .logo-wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
     border-right: 1px solid #323B49;
     background-color: #1F2937;
 
     .home-link {
       display: flex;
+
       .logo {
-        width: 55px;
+        width: 35px;
       }
 
       &:hover {
@@ -76,6 +87,7 @@
 
     .sidebar-menu {
       .sidebar-title {
+        opacity: 0;
         font-weight: 500;
         font-size: 12px;
         line-height: 160%;
@@ -90,21 +102,21 @@
       justify-content: space-between;
       margin-bottom: 30px;
 
-      .menu-icon {
+      img {
         width: 24px;
         height: 24px;
         background-color: #1F2937;
       }
 
       .menu-item-title {
-        opacity: 0;
+        display: none;
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.2px;
+        height: 23px;
         color: #718096;
         margin-left: 16px;
-        opacity: 0;
         transition: all 0.2s ease-in-out;
       }
 
