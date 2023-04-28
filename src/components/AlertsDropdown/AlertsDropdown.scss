@@ -3,14 +3,22 @@
   align-items: center;
   justify-content: center;
 
-  &:hover {
-    .alerts-list {
-      display: flex;
+  .alert-button {
+    outline: none;
+    background: none;
+    border: none;
+
+    img {
+      cursor: pointer;
+    }
+
+    &:hover {
+      opacity: 0.6;
     }
   }
 
   .alerts-list {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;

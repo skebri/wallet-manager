@@ -1,3 +1,4 @@
+import { useCallback, useState } from 'react';
 import searchIcon from '../../assets/search-icon-indicator.svg';
 import cmdIcon from '../../assets/cmd-icon.svg';
 import stakingIcon from '../../assets/staking-icon.svg';
@@ -68,39 +69,54 @@ export const MagicSearch = () => {
     }
   ]
 
+  const [ searchOptions, setSearchOptions] = useState(false);
+
+  const toggleSearchOptions = useCallback(() => setSearchOptions(!searchOptions), [searchOptions]);
+
+  const [searchValue, setSearchValue] = useState('');
+
+  const searchOptionToInput = useCallback((cmd) => setSearchValue(`${searchValue} ${cmd}`), [searchValue])
+
   return (
     <div className="search-wrapper">
       <div className="input-wrapper">
         <img src={searchIcon} alt="Search" />
-        <input type="text" placeholder="Search..." />
+        <input type="text" value={searchValue} placeholder="Search..." onChange={(event) => setSearchValue(event.target.value)} />
       </div>
 
-      <div id="options" className="search-options">
-        <button className="search-cmd-wrapper">
-          <div className="cmd-list">
-            <div className="cmd-list-explain">
-              <div className="explain-title">Shortcut Legend</div>
+      <div className="search-options">
+        <button onClick={toggleSearchOptions} className="icons-wrapper">
+          <img src={cmdIcon} alt="Cmd" />
 
-              <div className="explain-description">This is a legend with shortcuts, buy entering them You can filter through Explore.</div>
-            </div>
-            {
-              searchShortcuts && searchShortcuts.map(shortcut => (
-                <div className="cmd-item">
-                  <img src={shortcut.icon} className="cmd-icon" />
-
-                  <div className="cmd-content">
-                    <div className="cmd-shortcut">{shortcut.cmd}</div>
-                    <div className="cmd-name">{shortcut.name}</div>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
+          <div className="help">?</div>
         </button>
 
-        <img src={cmdIcon} alt="Cmd" />
+        {
+          searchOptions &&
+          (
+            <div className={`search-cmd-wrapper ${searchOptions && 'search-show'}`}>
+              <div className="cmd-list">
+                <div className="cmd-list-explain">
+                  <div className="explain-title">Shortcut Legend</div>
 
-        <div className="help">?</div>
+                  <div className="explain-description">This is a legend with shortcuts, buy entering them You can filter through Explore.</div>
+                </div>
+                {
+                  searchShortcuts && searchShortcuts.map(shortcut => (
+                    <button onClick={() => searchOptionToInput(shortcut.cmd)} key={shortcut.cmd} className="cmd-item">
+                      <img src={shortcut.icon} className="cmd-icon" />
+
+                      <div className="cmd-content">
+                        <div className="cmd-shortcut">{shortcut.cmd}</div>
+                        <div className="cmd-name">{shortcut.name}</div>
+                      </div>
+                    </button>
+                  ))
+                }
+              </div>
+            </div>
+          )
+        }
       </div>
     </div>
   )
