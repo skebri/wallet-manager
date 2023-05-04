@@ -21,7 +21,7 @@ export const SocialLinks = () => {
 
         <a href="https://svarogdev.com" className="social-link">
           <img src={twitter} alt="twitter" />
-          <div>
+          <div className="social-info-wrapper">
             <p className="social-text">Twitter</p>
             <p className="social-username">@walletmanager</p>
           </div>

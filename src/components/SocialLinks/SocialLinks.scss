@@ -7,9 +7,7 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 130%;
-    /* or 36px */
-
-
+    margin-bottom: 5px;
     color: #0CAF60;
     max-width: 212px;
 
@@ -33,9 +31,21 @@
       background: #292929;
       border-radius: 100px;
       text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
 
       img {
         height: 36px;
+      }
+
+      .social-info-wrapper {
+
+        .social-text {
+          margin-bottom: 5px;
+        }
       }
 
       @media all and (max-width: 770px) {

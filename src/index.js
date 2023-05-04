@@ -14,6 +14,7 @@ import store from './store/index';
 import { WagmiConfig } from 'wagmi';
 import { chains, wagmiClient } from './services/rainbowService.js';
 import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import  { Explore } from './components/Explore/Explore';
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,25 @@ const router = createBrowserRouter([
   },
   {
     path: "/app",
-    element: <App />
+    element: <App />,
+    children: [
+       {
+         path: '',
+         element: <div>Dashboard</div>,
+       },
+       {
+         path: 'explore',
+         element: <Explore />,
+       },
+       {
+         path: 'settings',
+         element: <div>Settings</div>,
+       },
+       {
+         path: 'help',
+         element: <div>Help</div>,
+       },
+    ],
   },
 ]);
 

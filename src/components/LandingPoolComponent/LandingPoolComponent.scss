@@ -1,0 +1,14 @@
+.landing-pool-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 345px;
+  background: #1F2937;
+  border: 1px solid #0CAF60;
+  border-radius: 16px;
+
+  .landing-pool-title {
+    padding: 20px;
+  }
+}

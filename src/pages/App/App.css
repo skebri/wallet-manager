@@ -5,5 +5,9 @@
 
   .app-render {
     width: 100%;
+
+    .app-render-content {
+      padding: 48px;
+    }
   }
 }

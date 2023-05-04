@@ -1,4 +1,5 @@
 .sidebar {
+  position: fixed;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -101,6 +102,8 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 30px;
+      text-decoration: none;
+
 
       img {
         width: 24px;
@@ -118,6 +121,10 @@
         color: #718096;
         margin-left: 16px;
         transition: all 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 0.6;
+        }
       }
 
       &:last-child {

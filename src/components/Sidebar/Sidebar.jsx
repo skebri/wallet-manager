@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../../assets/wp-logo.svg';
 import dashboard from '../../assets/dashboard-icon.svg';
@@ -22,31 +22,31 @@ export const Sidebar = () => (
         <div className="sidebar-menu">
           <div className="sidebar-title">Menu</div>
 
-          <div className="menu-item">
+          <NavLink to="/app" className="menu-item">
             <img className="menu-item-icon" src={dashboard} alt="DashIcon" />
             <div className="menu-item-title">Dashboard</div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="sidebar-menu">
           <div className="sidebar-title">Tools</div>
 
-          <div className="menu-item">
+          <NavLink to="/app/explore" className="menu-item">
             <img src={explore} alt="DashIcon" />
             <div className="menu-item-title">Explore</div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="sidebar-actions">
-          <div className="menu-item">
+          <NavLink to="/app/settings" className="menu-item">
             <img src={settings} alt="DashIcon" />
             <div className="menu-item-title">Settings</div>
-          </div>
+          </NavLink>
 
-          <div className="menu-item">
+          <NavLink to="/app/help" className="menu-item">
             <img src={help} alt="DashIcon" />
             <div className="menu-item-title">Get Help</div>
-          </div>
+          </NavLink>
         </div>
       </div>
     </div>
