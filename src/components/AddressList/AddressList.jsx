@@ -9,7 +9,7 @@ export const AddressList = () => {
   const getApiData = async () => {
     const data = await getWalletAddressList();
 
-    setAddressList(data)
+    setAddressList(data.walletAddresses)
 
     console.log('wallet-data', data);
   }

@@ -9,7 +9,7 @@ export const getProtcolList = async () => {
 }
 
 export const getWalletAddressList = async () => {
-  const result = await fetch(`${API_URL}/walletList`, {
+  const result = await fetch(`${API_URL}/wallet/user`, {
     method: 'GET'
   })
 
