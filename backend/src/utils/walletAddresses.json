@@ -1,0 +1,40 @@
+[
+  {
+    walletType: 'MetaMask',
+    address: '0xb102771F4110c4DDB362B6e2b2638F689F9b8A95',
+    network: 'ETH',
+    assets: [
+      {
+        ticker: 'ETH',
+        amount: '0.2'
+      },
+      {
+        ticker: 'USDT',
+        amount: '1400.2'
+      },
+      {
+        ticker: 'USDC',
+        amount: '50000'
+      }
+    ]
+  },
+  {
+    walletType: 'Ledger',
+    address: '0x3C27D6B6D9336d1Df278147408e211d8a6033039',
+    network: 'Polygon',
+    assets: [
+      {
+        ticker: 'ETH',
+        amount: '0.2'
+      },
+      {
+        ticker: 'USDT',
+        amount: '1400.2'
+      },
+      {
+        ticker: 'USDC',
+        amount: '50000'
+      }
+    ]
+  }
+]

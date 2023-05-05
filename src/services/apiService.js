@@ -7,3 +7,11 @@ export const getProtcolList = async () => {
 
   return result.json()
 }
+
+export const getWalletAddressList = async () => {
+  const result = await fetch(`${API_URL}/walletList`, {
+    method: 'GET'
+  })
+
+  return result.json()
+}

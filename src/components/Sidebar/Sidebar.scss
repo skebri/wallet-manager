@@ -45,32 +45,6 @@
         opacity: 0.6;
       }
     }
-
-    .expander-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: none;
-      border: none;
-      right: 0;
-      outline: none;
-      position: absolute;
-      cursor: pointer;
-
-      .expander {
-        width: 32px;
-        height: 32px;
-        transform: rotate(180deg);
-
-        &:hover {
-          opacity: 0.6;
-        }
-      }
-
-      .wallet-expander-rotate {
-        transform: rotate(0deg);
-      }
-    }
   }
 
   .sidebar-navigation {

@@ -32,19 +32,19 @@ export const Sidebar = () => (
           <div className="sidebar-title">Tools</div>
 
           <NavLink to="/app/explore" className="menu-item">
-            <img src={explore} alt="DashIcon" />
+            <img src={explore} alt="ExploreIcon" />
             <div className="menu-item-title">Explore</div>
           </NavLink>
         </div>
 
         <div className="sidebar-actions">
           <NavLink to="/app/settings" className="menu-item">
-            <img src={settings} alt="DashIcon" />
+            <img src={settings} alt="SettingsIcon" />
             <div className="menu-item-title">Settings</div>
           </NavLink>
 
           <NavLink to="/app/help" className="menu-item">
-            <img src={help} alt="DashIcon" />
+            <img src={help} alt="GetHelpIcon" />
             <div className="menu-item-title">Get Help</div>
           </NavLink>
         </div>

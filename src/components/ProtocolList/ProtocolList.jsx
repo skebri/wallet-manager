@@ -10,13 +10,12 @@ export const ProtocolList = () => {
     const data = await getProtcolList();
 
     setProtocolList(data);
-
-    console.log('backend-data', data);
   }
 
   useEffect(() => {
     getApiData()
   }, [])
+
   return (
     <div className="protocol-list">
     {protocolList.map(({ apy, tvl, name }) =>

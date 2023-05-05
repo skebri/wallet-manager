@@ -1,0 +1,108 @@
+.wallet-manager-widget {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 345px;
+  background: #1F2937;
+  border: 1px solid #0CAF60;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 717px;
+
+  .wallet-manager-widget-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    width: 100%;
+    color: #FAFAFA;
+    box-sizing: border-box;
+
+    .expander {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      outline: none;
+      background: none;
+      border: none;
+      height: 32px;
+      padding: 0;
+
+      img {
+        cursor: pointer;
+        border-radius: 10px;
+
+        &:hover {
+          opacity: 0.6;
+          border: 1px solid #86D7B0;
+        }
+      }
+    }
+  }
+
+  .wallet-widget-address-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .wallet-widget-address-input {
+      outline: none;
+      background: #323B49;
+      border: none;
+      width: 100%;
+      padding: 8px 20px 8px 20px;
+      height: 32px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin-right: 20px;
+      color: #FFF;
+
+      &:hover {
+        border: 1px solid #86D7B0;
+      }
+    }
+
+    .wallet-widget-address-add-button {
+      outline: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      padding: 8px 10px 8px 8px;
+      width: 112px;
+      height: 32px;
+      background: #0CAF60;
+      border-radius: 6px;
+      border: 1px solid #0CAF60;
+      cursor: pointer;
+      color: #FFF;
+
+      &:hover {
+        border: 1px solid #86D7B0;
+        color: #86D7B0;
+      }
+    }
+  }
+
+  .wallet-manager-table {
+    padding: 20px;
+    border: 1px solid #323B49;
+    width: 100%;
+    box-sizing: border-box;
+    color: #718096;
+    border-radius: 16px;
+
+    .wallet-manager-widget-column-titles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
