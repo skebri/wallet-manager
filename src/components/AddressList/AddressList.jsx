@@ -26,7 +26,7 @@ export const AddressList = () => {
           <div className="address-list">
             {
               addressList.map((wallet) =>
-              <div className="address-list-row">
+              <div key={wallet.address} className="address-list-row">
                 <div className="address-list-row-item-wallet">{wallet.walletType}</div>
                 <div className="address-list-row-item-address">{wallet.address}</div>
                 <div className="address-list-row-item-network">{wallet.network}</div>
